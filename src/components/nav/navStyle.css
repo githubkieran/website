@@ -1,0 +1,20 @@
+/*just navbar styling*/
+.mainContainer {
+    font-size: 12px;
+    color: white;
+}
+
+.unorderedList {
+    list-style: none;
+    text-align: center;
+    
+    #li {
+        display: inline;
+        margin: 12px;
+    }
+
+    #a {
+        color: white;
+        text-decoration: none;
+    }
+}

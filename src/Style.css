@@ -1,0 +1,112 @@
+/*homepage*/
+
+* {
+    font-family: monospace;
+    ::selection {
+        background-color: rgb(78, 236, 136);
+        color: black;
+    }
+}
+
+.background {
+    background-color: rgb(32, 32, 32);
+}
+
+.homeDiv, .mainContactDiv, .skillsDiv, .projectsDiv {
+    color: rgb(255, 255, 255); 
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.homeHeading, .skillsHeading {
+    font-size: 40px;
+    
+}
+
+.homeP {
+    font-size: 20px;
+}
+
+
+.linkDiv {
+    float: right;
+        
+    #socialLink {
+        color: rgb(255, 255, 255); 
+        font-size: 25px;
+        margin: 5px;
+    }
+}
+
+/*contact box*/
+.mainContactDiv{
+    padding-top: 30px;
+    font-size: 20px;
+    
+    #contactLabels {
+        margin-bottom: 5px;
+    }
+
+    #contactInputs {
+        color: black;
+        font-size: 20px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    #messageLabel {
+        color: black;
+        font-size: 20px;
+        margin-top: 5px;
+        width: 100%;
+        height: 80px;
+        resize: none;
+    }
+}
+
+.messageButton {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    border: none;
+    display: inline-block;
+}
+
+/*skills page*/
+.skillName {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.languagesDiv, .frameworksDiv, .databaseDiv, .otherDiv {
+    font-size: 20px; 
+
+    /*set default height*/
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.languagesDiv.open, .frameworksDiv.open, .databaseDiv.open {
+    height: 200px; 
+} /*change to less px on mobile*/ 
+
+.otherDiv.open {
+    height:400px;
+}
+
+.skillContainer{
+    display: inline;  
+}
+
+#skillImg{
+    height: 150px;
+    margin: 5px;
+}
+
+/*projects page*/
+.projectInfo:hover{
+    border: 2px, solid white;
+}
