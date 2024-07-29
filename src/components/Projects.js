@@ -6,11 +6,11 @@ function Projects() {
         <div className="projectsDiv">
             <h1 className="projectsHeading">Projects</h1>
             <section>
-                <div className="projectInfo">
-                    <h3>
+                <div className="projectInfoDiv">
+                    <h3 className="projectInfoHeading">
                         Project brev
                     </h3>
-                    <p>
+                    <p className="projectInfo">
                         this is a project brev
                     </p>
                 </div>

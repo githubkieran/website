@@ -114,9 +114,6 @@ function Skills(){
                         <img id="skillImg" src="/skills_pics/unity.png" alt="languages" />
                     </div>
                     <div className="skillContainer">
-                        <img id="skillImg" src="/skills_pics/devops.png" alt="languages" />
-                    </div>
-                    <div className="skillContainer">
                         <img id="skillImg" src="/skills_pics/github.png" alt="languages" />
                     </div>
                 </div>

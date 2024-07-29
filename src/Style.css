@@ -1,5 +1,4 @@
 /*homepage*/
-
 * {
     font-family: monospace;
     ::selection {
@@ -18,7 +17,7 @@
     padding-right: 15%;
 }
 
-.homeHeading, .skillsHeading {
+.homeHeading, .skillsHeading, .projectsHeading {
     font-size: 40px;
     
 }
@@ -107,6 +106,15 @@
 }
 
 /*projects page*/
-.projectInfo:hover{
-    border: 2px, solid white;
+/* 
+.projectInfoDiv {
+        
+} */
+
+.projectInfoHeading{
+    font-size: 28px;
+}
+
+.projectInfo {
+    font-size: 20px;
 }
