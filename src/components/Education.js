@@ -7,7 +7,7 @@ import './style.min.css';
 
 function Education(){
     return(
-        <div className="educationDiv">
+        <div className="mainDiv">
             <h1 className="educationHeading">Education</h1> 
             <VerticalTimeline>
                 <VerticalTimelineElement

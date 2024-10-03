@@ -5,14 +5,14 @@ import { BsLinkedin, BsGithub  } from 'react-icons/bs';
 
 function Homepage() {
     return(
-        <div className="mainHomeDiv">
+        <div className="mainDiv">
             <div className="homeDiv">
                 <h1 className="homeHeading">Kieran Harley</h1> 
-            <   p className="homeP">
-                    I am a full-stack developer and I like to create unique frontend 
-                    experiences while optimising the backend to allow for a smooth UI/UX.
-
-                    put below links to the right of the paragraph
+                <p className="homeP">
+                    I'm a full-stack developer from the UK, with a passion for ui/ux and optimising backend 
+                    systems. I excel at leveraging DevOps practices to enhance 
+                    development efficiency and ensure smooth, continuous integration and delivery. I like to get 
+                    the most out of the least, focusing on efficient resource utilisation and streamlined workflows. 
                 </p>
                 <div className="linkDiv">
                     <a href="https://github.com/githubkieran" target="_blank" rel="noreferrer" id="socialLink"><BsGithub/></a>

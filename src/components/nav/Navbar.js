@@ -3,9 +3,9 @@ import './navStyle.css';
 import { Link } from 'react-router-dom';
 
 import { FaCode } from 'react-icons/fa6'
-import { GiAlliedStar  } from "react-icons/gi";
 import { TbSchool } from "react-icons/tb";
 import { MdComputer } from "react-icons/md";
+import { FaRegFolderOpen } from "react-icons/fa";
 import { LuFileSpreadsheet } from "react-icons/lu";
 
 const Navbar = () => {
@@ -20,10 +20,10 @@ const Navbar = () => {
                         <TbSchool /> <Link to="/education" id="a">Education</Link>
                     </li>
                     <li id="li">
-                        <GiAlliedStar /> <Link to="/skills" id="a">Skills</Link>
+                        <FaRegFolderOpen /> <Link to="/projects" id="a">Projects</Link> 
                     </li>
                     <li id="li">
-                        <MdComputer /> <Link to="/projects" id="a">Projects</Link> 
+                        <MdComputer /> <Link to="/blog" id="a">Blog</Link> 
                     </li>
                     <li id="li">
                         <LuFileSpreadsheet /> <Link to="/" id="a" target="_none">Download CV</Link> 
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-            <hr></hr>
+            <hr className="hrNav" />
         </div>
         
     )
