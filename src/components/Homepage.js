@@ -1,25 +1,26 @@
 import React from "react";
 import '../Style.css';
+import Skills from "./Skills";
 import Contact from './Contact'
-import { BsLinkedin, BsGithub  } from 'react-icons/bs';
+import Footer from './Footer'
+import Education from "./Education";
+import Projects from "./Projects";
 
 function Homepage() {
     return(
-        <div className="mainDiv">
+        <div id="home-section" className="mainDiv">
             <div className="homeDiv">
-                <h1 className="homeHeading">Kieran Harley</h1> 
+                <h1 className="homeHeading">I'm Kieran</h1> 
                 <p className="homeP">
-                    I'm a full-stack developer from the UK, with a passion for ui/ux and optimising backend 
-                    systems. I excel at leveraging DevOps practices to enhance 
-                    development efficiency and ensure smooth, continuous integration and delivery. I like to get 
-                    the most out of the least, focusing on efficient resource utilisation and streamlined workflows. 
+                    A coding enthusiast skilled in C#, Java, Python, and JavaScript who
+                    has a soft spot for the nostalgic charm of static web pages. 
                 </p>
-                <div className="linkDiv">
-                    <a href="https://github.com/githubkieran" target="_blank" rel="noreferrer" id="socialLink"><BsGithub/></a>
-                    <a href="https://www.linkedin.com/in/kieran-harley/" target="_blank" rel="noreferrer" id="socialLink"><BsLinkedin/></a> 
-                </div>
             </div>
+            <Skills />
+            <Education />
+            <Projects />
             <Contact />
+            <Footer />
         </div>
     )
 }

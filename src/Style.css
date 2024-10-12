@@ -23,12 +23,18 @@ body {
     align-content: center;
 }
 
-.homeDiv, .mainContactDiv, .projectsDiv, .blogDiv {
+.homeDiv, .mainContactDiv, .projectsDiv, .skillsDiv {
     color: rgb(255, 255, 255); 
 }
 
-.homeHeading, .projectsHeading, .blogHeading {
-    font-size: 40px;
+.homeHeading {
+    padding-top: 5%;
+    font-size: 36px;
+}
+
+.projectsHeading, .blogHeading, .contactHeading, .skillsHeading {
+    font-size: 36px;
+    
 }
 
 .homeP {
@@ -36,20 +42,8 @@ body {
     line-height: 1.8;
 }
 
-
-.linkDiv {
-    float: right;
-        
-    #socialLink {
-        color: rgb(255, 255, 255); 
-        font-size: 25px;
-        margin: 5px;
-    }
-}
-
 /*contact box*/
 .mainContactDiv{
-    padding-top: 10px;
     font-size: 20px;
 
     #contactInputs {
@@ -79,9 +73,75 @@ body {
     display: inline-block;
 }
 
+.inputWrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#contactInputs, #messageLabel {
+    width: calc(100% - 30px);
+    padding-right: 30px; /* Make space for the tick */
+    box-sizing: border-box;
+}
+
+.tick {
+    position: absolute;
+    right: 10px;
+    top: 67%;
+    transform: translateY(-50%);
+    color: green;
+    font-size: 1.5em;
+    pointer-events: none; /*stop tick from being interacted with*/
+}
+.messageTick {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: green;
+    font-size: 1.5em;
+    pointer-events: none; /*stop tick from being interacted with*/
+}
+/*skills page*/
+.skillsContainer {
+    display: flex;
+    justify-content: space-between; /* Space out the boxes */
+    margin-top: 20px;
+}
+
+.skillBox {
+    background-color: rgb(54, 54, 54); /* Background color for boxes */
+    border: 2px solid rgb(46, 143, 255); /* Border color for boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 30%; /* Width of each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.skillBox:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.skillTitle {
+    font-size: 24px; /* Title font size */
+    color: rgb(255, 255, 255); /* Title text color */
+}
+
+.skillBox ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    color: rgb(200, 200, 200); /* Item text color */
+}
+
+.skillBox li {
+    margin: 5px 0; /* Spacing between items */
+}   
+
 /*projects page*/
 .projectInfoHeading{
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .projectInfo {
@@ -91,3 +151,32 @@ body {
 
 /*blog page*/
 
+/*footer*/
+
+.footerDiv {
+    text-align: center;   
+}
+
+.break {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.fP {
+    font-size: 20px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkDiv {
+        
+    #socialLink {
+        color: rgb(255, 255, 255); 
+        font-size: 25px;
+        margin: 5px;
+    }
+}

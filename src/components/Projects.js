@@ -3,7 +3,8 @@ import '../Style.css';
 
 function Projects() {
     return(
-        <div className="mainDiv">
+        <div id="projects-section" className="mainDiv">
+            <hr className="break"/>
             <div className="projectsDiv">
                 <h1 className="projectsHeading">Projects</h1>
                 <section className="projectSection">

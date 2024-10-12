@@ -1,21 +1,19 @@
 import React from "react";
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Homepage from "../components/Homepage";
 import Education from "../components/Education";
 import Projects from "../components/Projects";
-import Blog from "../components/Blog";
-
+import Contact from "../components/Contact";
 
 function ReactRouter() {
-    return(
+    return (
         <Routes>
-            <Route index element={<Homepage/>} />
-            <Route path="/education" element={<Education/>} />
-            <Route path="/projects" element={<Projects/>} />
-            <Route path="/blog" element={<Blog/>} />
-            {/**download link for cv here */}
+            <Route index element={<Homepage />} />
+            <Route path="/education" element={<div id="education-section"><Education /></div>} />
+            <Route path="/projects" element={<div id="projects-section"><Projects /></div>} />
+            <Route path="/contact" element={<div id="contact-section"><Contact /></div>} />
         </Routes>
-    )
+    );
 }
 
 export default ReactRouter;

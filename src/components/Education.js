@@ -7,7 +7,8 @@ import './style.min.css';
 
 function Education(){
     return(
-        <div className="mainDiv">
+        <div id="education-section" className="mainDiv">
+            <hr className="break"/>
             <h1 className="educationHeading">Education</h1> 
             <VerticalTimeline>
                 <VerticalTimelineElement
@@ -15,7 +16,7 @@ function Education(){
                     contentStyle={{ background: 'rgb(255, 255, 255)', color: "black" }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
                     date={<span className="timeline-date">July 2024</span>}
-                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#fff', border: '2px solid #ddd'}}
+                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#0054A4', border: '2px solid #ddd'}}
                     icon={<LiaUniversitySolid />}
                 >
                     <h3 className="vertical-timeline-element-title">Graduated University BSc(Hons)</h3>
@@ -26,7 +27,7 @@ function Education(){
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date={<span className="timeline-date">May 2022</span>}
-                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#fff', border: '2px solid #ddd' }}
+                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#652D90', border: '2px solid #ddd' }}
                     icon={<HiBuildingOffice  />}
                 >
                     <h3 className="vertical-timeline-element-title">Graduated College</h3>
@@ -37,7 +38,7 @@ function Education(){
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date={<span className="timeline-date">April 2022</span>}
-                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#fff', border: '2px solid #ddd' }}
+                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#F80000', border: '2px solid #ddd' }}
                     icon={<TbFileCertificate />}
                 >
                     <h3 className="vertical-timeline-element-title">Gained Certificate</h3>
@@ -48,7 +49,7 @@ function Education(){
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date={<span className="timeline-date">November 2021</span>}
-                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#fff',border: '2px solid #ddd' }}
+                    iconStyle={{ background: 'rgb(29, 29, 29)', color: '#F80000',border: '2px solid #ddd' }}
                     icon={<TbFileCertificate />}
                 >
                     <h3 className="vertical-timeline-element-title">Gained Certificate</h3>
